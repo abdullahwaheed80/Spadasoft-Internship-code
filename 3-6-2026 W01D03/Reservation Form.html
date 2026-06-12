@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation Information Form</title>
+    <link rel="stylesheet" href="Reservation Form 1.css">
+</head>
+
+<body>
+
+    <div class="container">
+         <div class="banner">
+        <h2>Reservation Information Form</h2>
+         </div>
+        <p class="instruction">All fields in the form are required except the Special Requests field.</p>
+
+        <form method="post" class="main">
+
+            <div class="input">
+                <label>Name</label>
+                <div class="row">
+                    <input type="text" placeholder="First" required>
+                    <input type="text" placeholder="Last" required>
+                </div>
+            </div>
+            <br>
+            <div class="input">
+                <label for="phone">Phone Number</label><br>
+                <input type="tel" id="phone" placeholder="### ### ####" required>
+            </div>
+            <br>
+            <div class="input">
+                <label for="email">Email Address</label><br>
+                <input type="email" id="email" required>
+            </div>
+            <br>
+
+            <h3>Gender</h3>
+
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="other"> Other
+            </label>
+
+
+            <br>
+            <div class="input">
+                <select id="Course" required>
+                    <option value="single">Web Development</option>
+                    <option value="double">Data Science</option>
+                    <option value="suite">Mobile App Development</option>
+                    <option value="single">AI/ML Engineering</option>
+                    <option value="double">Video Editing</option>
+                </select>
+            </div>
+            <br>
+            <div class="input">
+                <label for="requests">Special Requests</label><br>
+                <textarea id="requests" rows="4"></textarea>
+            </div>
+            <br>
+            <div class="input-button">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

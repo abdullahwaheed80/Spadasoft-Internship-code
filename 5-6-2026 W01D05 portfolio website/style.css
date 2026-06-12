@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(24, 31, 26);
+    color: rgb(220, 215, 201) !important;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 2rem;
+    border-radius: 18px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(220, 215, 201, 0.15);
+    /* Semi-transparent cream */
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.dropdown-menu {
+     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 18px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(220, 215, 201, 0.15);
+    /* Semi-transparent cream */
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+.nav-item .dropdown-menu a{
+    color: rgb(220, 215, 201) !important;
+}
+.dropdown-divider{
+    background-color: rgba(220, 215, 201, 0.3);
+}
+.hero {
+
+    margin-top: 10rem;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    background: linear-gradient(75deg, rgb(220, 215, 201), rgb(188, 184, 172), rgb(190, 186, 174), rgb(94, 92, 85), rgb(0, 0, 0), rgb(91, 89, 82), rgb(163, 160, 149), rgb(186, 183, 171), rgb(220, 215, 201));
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 5.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+.hero p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    padding: 0px 80px;
+}
+
+.cv-btn {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgb(231, 225, 177);
+    color: rgb(24, 31, 26);
+    border-radius: 18px;
+    padding: 0.8rem;
+    margin-top: 2.5rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cv-btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#skills-title {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    grid-template-rows: auto;
+
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 2rem;
+    /* This line pushes the entire row to the bottom of the card */
+    width: 100%;
+}
+
+.skill-list span {
+    background: #111;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.skill-card:hover .skill-list span {
+    border-color: rgba(1, 255, 1, 0.5);
+}
+
+#project-title {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    grid-template-rows: auto;
+}
+
+.card {
+    background-color: rgb(231, 225, 177);
+    border: 1px solid rgba(252, 212, 179, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Stacks everything nicely from the top */
+    min-height: 200px;
+    /* Optional: Sets a uniform layout height for all cards */
+    padding: 20px;
+    border-radius: 10px;
+
+
+}
+
+.git-btn {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgb(24, 31, 26);
+    color: rgb(220, 215, 201);
+    border-radius: 18px;
+    padding: 0.8rem;
+    margin-top: auto;
+    align-self: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.git-btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.live-btn {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgb(24, 31, 26);
+    color: rgb(220, 215, 201);
+    border-radius: 18px;
+    padding: 0.8rem;
+    margin-top: auto;
+    align-self: flex-start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.live-btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    /* This line pushes the entire row to the bottom of the card */
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.nav-item {
+
+    padding: 0.5rem;
+}
+
+
+/*@media(max-width: 1200px) {
+   
+    .project-section{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .skills-section{
+        grid-template-columns: 1fr 1fr;
+    }
+    .project-section{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}@media (max-width: 628px) {
+    .skills-section{
+        grid-template-columns: 1fr;
+    }
+    .project-section{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-section{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+    .project-section{
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}*/
+
+
+
+@media (max-width: 1024px) {
+    .project-section {
+        grid-template-columns: 1fr 1fr;
+        /* Shifts projects from 4 columns to 2 columns */
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        /* Reduces hero font size slightly */
+    }
+}
+
+/* Small tablets and large mobile phones (max-width: 768px) */
+@media (max-width: 768px) {
+    nav {
+        margin: 1rem;
+        /* Lowers fixed nav spacing */
+    }
+
+    .hero {
+        margin-top: 8rem;
+        /* Reduces gap under navbar */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        padding: 0 20px;
+        /* Removes large 80px side padding */
+    }
+
+    .skills-section {
+        grid-template-columns: 1fr 1fr;
+        /* Shifts skills from 3 columns to 2 columns */
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        /* Footer sections stack vertically */
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+/* Small mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+        /* Fits typography onto small screens */
+    }
+
+    .skills-section,
+    .project-section {
+        grid-template-columns: 1fr;
+        /* Forces full-width layout for all grids */
+        padding: 1rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        /* Stacks git and live buttons vertically if needed */
+        gap: 10px;
+    }
+
+    .git-btn,
+    .live-btn {
+        width: 100%;
+        /* Maximizes buttons for easier tapping */
+        text-align: center;
+    }
+}
+
+@media(max-width: 992px) {
+    .navbar-nav {
+        font-weight: bold;
+        color: white !important;
+    }
+}

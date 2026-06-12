@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="University reservation.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <h1>Home</h1>
+            <h1>Gallery</h1>
+            <h1>About</h1>
+            <h1>Contact</h1>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h1>University Tech Fest</h1>
+
+        <p>Welcome to our Tech Fest</p>
+
+        <img src="Images/download 1.png" alt="Tech Fest Image">
+
+
+        <hr>
+        <!--Time Table-->
+        <h2>Time Table</h2>
+        <table class="table">
+            <thead>
+
+                <tr>
+                    <th>Events</th>
+                    <th>Time</th>
+                    <th>Room No</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Orientation</td>
+                    <td>8:00 AM</td>
+                    <td>06</td>
+
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>Document Verification</td>
+                    <td>9:00 AM</td>
+                    <td>02</td>
+                </tr>
+            </tbody>
+        </table><br>
+
+        <hr>
+        <!--Lists-->
+        <h2>Our Goals</h2>
+        <ul>
+            <li>Event 1: Orientation</li>
+            <li>Event 2: Document Verification</li>
+        </ul>
+        <h2>Our Objectives</h2>
+        <ol>
+            <li>Event 1: Orientation</li>
+            <li>Event 2: Document Verification</li>
+        </ol>
+
+        <hr>
+
+        <!--Login Form-->
+        <h2>Login Form</h2>
+        <form method="post">
+            <label>Name</label>
+            <input type="text" placeholder="First" required>
+            <input type="text" placeholder="Last" required>
+            <br><br>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="### ### ####" required>
+            <br><br>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" required>
+            <br><br>
+
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" required>
+            <br><br>
+
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" required>
+            <br><br>
+
+
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" min="1" required>
+            <br><br>
+            <select>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+            <br><br>
+
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" rows="4"></textarea>
+            <br><br>
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">SUBMIT FORM</button>
+            <br>
+        </form>
+
+        <hr>
+
+        <aside>
+            <h3>About Us</h3>
+            <p>We are a team of passionate developers dedicated to creating amazing web experiences.</p>
+        </aside>
+
+        <hr>
+ 
+        <!-- Footer -->
+        <footer>
+            <h2>Subscribe to Our Newsletter</h2>
+            <h3>Get the latest updates and offers delivered straight to your inbox.</h3>
+            <input type="checkbox" id="checkbox" required><br>
+            <label for="checkbox">Subscribe</label>
+            <p>&copy; 2023 University Tech Fest. All rights reserved.</p>
+        </footer> PECEDENCE
+</body>
+
+</html>
